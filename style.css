@@ -30,9 +30,15 @@ header a{
 #inicio{
     position: relative;
     display: flex;
+    gap: 15px;
     align-items: center;
     justify-content: center;
     padding: 24px 80px 125px;
+}
+
+#start{
+    width: 100%;
+    height: auto;
 }
 
 #botao{
@@ -91,6 +97,11 @@ h2{
     gap: 64px;
 }
 
+#img-clinica{
+    width: 60%;
+    height: auto;
+}
+
 #clinica li{
     margin-left: 34px;
     margin-bottom: 8px;
@@ -102,8 +113,14 @@ h2{
     margin: 0 auto;
 }
 
+#farmacia p{
+    margin: 0 30px;
+}
+
 #farmacia img{
     margin: 64px auto;
+    width: 50%;
+    height: auto;
 }
 
 #duvidas{
@@ -198,4 +215,24 @@ footer p a {
 #dev a{
     color: #ff725e;
     text-decoration: none;
+}
+
+@media screen and (max-width: 850px) {
+    #inicio{
+        flex-direction: column;
+    }
+    #botao{
+        justify-content:center;
+    }
+    #clinica{
+        flex-direction: column;
+    }
+
+    #duvidas{
+        flex-direction: column-reverse;
+    }
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
