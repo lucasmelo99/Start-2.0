@@ -98,7 +98,7 @@ h2{
 }
 
 #img-clinica{
-    width: 60%;
+    width: 100%;
     height: auto;
 }
 
@@ -218,14 +218,23 @@ footer p a {
 }
 
 @media screen and (max-width: 850px) {
+    header{
+        flex-direction: column;
+        gap: 30px;
+    }
+    header a{
+        padding: 0 7px;
+    }
     #inicio{
         flex-direction: column;
+        padding: 20px;
     }
     #botao{
         justify-content:center;
     }
     #clinica{
         flex-direction: column;
+        padding: 20px;
     }
 
     #duvidas{
